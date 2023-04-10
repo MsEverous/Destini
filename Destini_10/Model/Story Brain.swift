@@ -17,9 +17,23 @@ struct StoryBrain {
 ]
     var storyNumber = 0
     
-    mutating func nextStory(userChoice: String) {
+    mutating func nextStory(_ userChoice: String) {
         if userChoice == story[storyNumber].choice1 {
-            
+            storyNumber += 1
+        } else  {
+            storyNumber += 2
         }
+    }
+    
+    func getStoryText() -> String {
+        return story[storyNumber].title
+    }
+    
+    func getStoryChoice1() -> String {
+        return story[storyNumber].choice1
+    }
+    
+    func getStoryChoice2() -> String {
+        return story[storyNumber].choice2
     }
 }
