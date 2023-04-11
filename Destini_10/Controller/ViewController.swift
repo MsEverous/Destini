@@ -19,15 +19,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         storyLabel.text = storyBrain.story[0].title
+        
+        settingsButton()
+        stepChoice()
+    }
+    
+    func settingsButton() {
         choice1Buttom.setTitle(storyBrain.story[0].choice1, for: .normal)
         choice2Button.setTitle(storyBrain.story[0].choice2, for: .normal)
-        stepChoice()
+        choice1Buttom.titleLabel?.numberOfLines = 0
+        choice2Button.titleLabel?.numberOfLines = 0
     }
 
 
     @IBAction func choiceMade(_ sender: UIButton) {
         let userAnswer = sender.currentTitle
-        let storyNumber = storyBrain.storyNumber
         storyBrain.nextStory(userAnswer!)
         stepChoice()
         
