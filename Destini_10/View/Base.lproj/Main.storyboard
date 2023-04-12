@@ -19,17 +19,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="na3-n0-1Xy">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Gv-Qa-ubw">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Gv-Qa-ubw">
+                                <rect key="frame" x="10" y="59" width="373" height="759"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-bK-Ebg">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="539"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="539"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-Gj-QeQ">
-                                        <rect key="frame" x="0.0" y="549" width="393" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-Gj-QeQ">
+                                        <rect key="frame" x="0.0" y="549" width="373" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="0QL-ql-KKN"/>
                                         </constraints>
@@ -42,8 +42,8 @@
                                             <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldj-ld-4uP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8F-Pg-xe4">
-                                        <rect key="frame" x="0.0" y="659" width="393" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w8F-Pg-xe4">
+                                        <rect key="frame" x="0.0" y="659" width="373" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="K38-PU-GgP"/>
                                         </constraints>
@@ -63,8 +63,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="na3-n0-1Xy" secondAttribute="trailing" id="6aN-yF-kxB"/>
-                            <constraint firstItem="4Gv-Qa-ubw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FWu-hz-08I"/>
-                            <constraint firstAttribute="trailing" secondItem="4Gv-Qa-ubw" secondAttribute="trailing" id="HRm-oX-P4N"/>
+                            <constraint firstItem="4Gv-Qa-ubw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="8zh-Fm-Q75"/>
+                            <constraint firstItem="4Gv-Qa-ubw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ESs-Jv-5bv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Gv-Qa-ubw" secondAttribute="bottom" id="P0X-KD-EMt"/>
                             <constraint firstItem="na3-n0-1Xy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pt9-FI-sVT"/>
                             <constraint firstItem="na3-n0-1Xy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SGu-Pz-Nee"/>
@@ -73,7 +73,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="choice1Buttom" destination="BeN-Gj-QeQ" id="wM9-kJ-mpX"/>
+                        <outlet property="choice1Button" destination="BeN-Gj-QeQ" id="SCe-2Q-jym"/>
                         <outlet property="choice2Button" destination="w8F-Pg-xe4" id="iUr-8O-Iaf"/>
                         <outlet property="storyLabel" destination="jfP-bK-Ebg" id="goz-io-NRF"/>
                     </connections>

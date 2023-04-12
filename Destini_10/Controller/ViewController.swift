@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var storyLabel: UILabel!
-    @IBOutlet weak var choice1Buttom: UIButton!
+    @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
     var storyBrain = StoryBrain()
@@ -24,9 +24,9 @@ class ViewController: UIViewController {
     }
     
     func settingsButton() {
-        choice1Buttom.setTitle(storyBrain.story[0].choice1, for: .normal)
+        choice1Button.setTitle(storyBrain.story[0].choice1, for: .normal)
         choice2Button.setTitle(storyBrain.story[0].choice2, for: .normal)
-        choice1Buttom.titleLabel?.numberOfLines = 0
+        choice1Button.titleLabel?.numberOfLines = 0
         choice2Button.titleLabel?.numberOfLines = 0
     }
 
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     
      func stepChoice() {
         storyLabel.text = storyBrain.getStoryText()
-        choice1Buttom.setTitle(storyBrain.getStoryChoice1(), for: .normal)
+        choice1Button.setTitle(storyBrain.getStoryChoice1(), for: .normal)
         choice2Button.setTitle(storyBrain.getStoryChoice2(), for: .normal)
     }
     
