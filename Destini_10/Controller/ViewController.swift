@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         storyLabel.text = storyBrain.story[0].title
-        
         settingsButton()
         stepChoice()
     }
