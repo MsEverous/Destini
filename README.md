@@ -1,5 +1,5 @@
-## Destini 
+# Destini 
 
-# App Screen
+## App Screen
 ![Screen](Documentation/giphy.gif)
 
